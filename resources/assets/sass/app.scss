@@ -6,4 +6,78 @@
 @import "variables";
 
 // Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+$bg-mid: #CCC5B9;
+$bg-dark: #735290;
+$bg-light: #FFFCf2;
+
+html{
+    height: 100%;
+}
+body{
+    background: $bg-mid;
+    min-height: 100%;
+}
+nav{
+    background: $bg-dark;
+    color: $bg-light;
+    
+    a{
+        color: $bg-mid;
+    }
+}
+article.container{
+    -ms-align-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+article section{
+    background: $bg-light;
+    margin: 1em auto;
+    padding: 2em;
+}
+.correct{
+    -ms-align-items: center;
+    align-items: center;
+    background: #FFFCF2;
+    display: flex;
+    height: 20%;
+    margin: auto;
+    width: 90%;
+}
+.correct button{
+    flex-grow: 1;
+    padding: 2em;
+    margin: 0 1em;
+}
+.flashcard{
+    -ms-align-items: center;
+    align-items: center;
+    background: #FFFCF2;
+    border-radius: 2em;
+    cursor: pointer;
+    display: flex;
+    height: 60%;
+    margin: auto;
+    transition: transform 2s linear;
+    width: 90%;
+}
+.front, .back{
+    margin: auto;
+}
+.back{
+    display: none;
+    transform: rotateX(180deg);
+}
+.flipped{
+    transform: rotateX(180deg);
+}
+.raised{
+    box-shadow: 0 0 8px 0 grey;
+}
+.rounded{
+    border-radius: 2em;
+}
