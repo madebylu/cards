@@ -95,6 +95,10 @@ article section {
           transform: rotateX(180deg);
 }
 
+.full-width {
+  width: 100%;
+}
+
 .raised {
   box-shadow: 0 0 8px 0 grey;
 }

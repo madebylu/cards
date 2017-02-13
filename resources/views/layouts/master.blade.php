@@ -15,8 +15,12 @@
     <nav class="nav navbar navbar-fixed-top raised">
         <div class="container">
             <ul class="nav justify-content-end">
-                <li class="nav-item"><a class="nav-link" href=#>A Link</a></li>
-                <li class="nav-item"><a class="nav-link" href=#>Log out</a></li>
+                <li class="nav-item"><a class="nav-link" href='/'>Home</a></li>
+                <li class="nav-item"><a class="nav-link" href='/sample'>Sample Card</a></li>
+                @if(Auth::check())
+                <li class="nav-item"><a class="nav-link" href="/dash">My Cards</a></li>
+                <li class="nav-item"><a class="nav-link" href="/logout">Log out</a></li>
+                @endif
             </ul>
         </div>
     </nav>
