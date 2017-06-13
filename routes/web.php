@@ -17,6 +17,9 @@ Route::get('/', function () {
 Route::get('sample', function () {
     return view('sample');
 });
+Route::get('dash', function () {
+    return view('home');
+});
 Route::auth();
 Route::get('logout', function() {
     Auth::logout();
