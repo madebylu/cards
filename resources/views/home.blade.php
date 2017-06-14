@@ -1,17 +1,20 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
 <div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    You are logged in!
+    <article>
+        <section class="raised rounded">
+            <div class="row">
+                <div class="col-sm-4 push-8">
+                    <h2>Topics</h2>
+                    <p><a href=# id="add-topic">Add a topic</a></p>
+                </div>
+                <div class="col-sm-8 pull-4">
+                    <h1>Welcome!</h1>
+                    <p>You are logged in</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </article>
 </div>
 @endsection
